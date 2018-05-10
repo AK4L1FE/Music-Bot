@@ -1,0 +1,9 @@
+b!play               Play music with the name you choose.
+b!skip               Skip the current music to the next of the playlist.
+b!connect        Connect to your current channel.
+b!stop              Stop playing music.
+b!volume         Change the music volume.
+b!np                  See what's currently playing.
+b!pause            Pause the music.
+b!resume         Resume the music.
+For further help, DM AK4L1FE#4246. :) 
