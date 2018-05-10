@@ -30,18 +30,6 @@ client.on('message', async msg => { // eslint-disable-line
 
 	let command = msg.content.toLowerCase().split(' ')[0];
 	command = command.slice(PREFIX.length)
-	
-	if (command === 'help' || command === 'commands'{
-	message.channel.send('b!play               Play music with the name you choose.
-b!skip               Skip the current music to the next of the playlist.
-b!connect        Connect to your current channel.
-b!stop              Stop playing music.
-b!volume         Change the music volume.
-b!np                  See what's currently playing.
-b!pause            Pause the music.
-b!resume         Resume the music.
-For further help, DM AK4L1FE#4246.')
-}
 
 	if (command === 'play') {
 		const voiceChannel = msg.member.voiceChannel;
