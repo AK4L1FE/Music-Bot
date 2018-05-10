@@ -30,6 +30,10 @@ client.on('message', async msg => { // eslint-disable-line
 
 	let command = msg.content.toLowerCase().split(' ')[0];
 	command = command.slice(PREFIX.length)
+	
+	if (command === 'help' || command === 'commands'{
+	message.channel.send(commandList)
+}
 
 	if (command === 'play') {
 		const voiceChannel = msg.member.voiceChannel;
@@ -59,9 +63,7 @@ client.on('message', async msg => { // eslint-disable-line
 					let index = 0;
 					msg.channel.send(`
 __**Song selection:**__
-
 ${videos.map(video2 => `**${++index} -** ${video2.title}`).join('\n')}
-
 Please provide a value to select one of the search results ranging from 1-10.
 					`);
 					// eslint-disable-next-line max-depth
@@ -109,9 +111,7 @@ Please provide a value to select one of the search results ranging from 1-10.
 		if (!serverQueue) return msg.channel.send('There is nothing playing.');
 		return msg.channel.send(`
 __**Song queue:**__
-
 ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
-
 **Now playing:** ${serverQueue.songs[0].title}
 		`);
 	} else if (command === 'pause') {
