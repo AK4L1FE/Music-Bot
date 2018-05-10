@@ -2,6 +2,7 @@ const { Client, Util } = require('discord.js');
 const { TOKEN, PREFIX, GOOGLE_API_KEY } = require('./config');
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
+const commandsList = require('commands.txt');
 
 const client = new Client({ disableEveryone: true });
 
@@ -32,7 +33,7 @@ client.on('message', async msg => { // eslint-disable-line
 	command = command.slice(PREFIX.length)
 	
 	if (command === 'help' || command === 'commands'{
-	message.channel.send(commandList)
+	message.channel.send(commandsList)
 }
 
 	if (command === 'play') {
