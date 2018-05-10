@@ -34,7 +34,7 @@ client.on('message', async msg => { // eslint-disable-line
 	
 	if (command === 'help' || command === 'commands'{
 	message.channel.send(commandsList)
-}
+        }
 
 	if (command === 'play') {
 		const voiceChannel = msg.member.voiceChannel;
