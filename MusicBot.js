@@ -138,15 +138,6 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 		title: Util.escapeMarkdown(video.title),
 		url: `https://www.youtube.com/watch?v=${video.id}`
 	};
-	if (!serverQueue) {
-		const queueConstruct = {
-			textChannel: msg.channel,
-			voiceChannel: voiceChannel,
-			connection: null,
-			songs: [],
-			volume: 5,
-			playing: true
-		};
 		queue.set(msg.guild.id, queueConstruct);
 
 		queueConstruct.songs.push(song);
