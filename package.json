@@ -1,6 +1,6 @@
 {
   "name": "yumeko",
-  "version": "5.8.0",
+  "version": "10.4.0",
   "description": "A simple discord bot",
   "main": "MusicBot.js",
   "scripts": {
