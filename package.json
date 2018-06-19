@@ -1,7 +1,7 @@
 {
-  "name": "yumeko",
+  "name": "Beats",
   "version": "10.4.0",
-  "description": "A simple discord bot",
+  "description": "¯\_(ツ)_/¯",
   "main": "MusicBot.js",
   "scripts": {
     "test": ""
@@ -11,7 +11,7 @@
     "bot",
     "discordbot"
   ],
-  "author": "iCrawl",
+  "author": "AK4L1FE",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.3.2",
