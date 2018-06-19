@@ -137,7 +137,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 		id: video.id,
 		title: Util.escapeMarkdown(video.title),
 		url: `https://www.youtube.com/watch?v=${video.id}`,
-                requestedBy: msg.auhtor
+                requestedBy: msg.author
 	};
 	if (!serverQueue) {
 		const queueConstruct = {
